@@ -1,0 +1,120 @@
+@import url(style.css);
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.menu .menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .menu-container a {
+    border: var(--border);
+    background-color: var(--grey);
+    color: var(--bg);
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 80%;
+    padding: 2rem 2rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.menu .menu-container a:hover {
+    background: var(--blue);
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.products-container .product {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: var(--bg);
+    color: var(--red);
+}
+
+.products-container .product .description {
+    color: var(--bg);
+    /* padding: 2rem; */
+    display: none;
+    width: 90%;
+    margin: 1rem 2rem;
+
+}
+
+.products-container .product .description.active {
+    display: block;
+}
+
+.products-container .product.active {
+    background: var(--grey);
+    color: var(--bg);
+    justify-content: start;
+}
+
+.products-container .product:hover {
+    cursor: pointer;
+    color: var(--bg);
+    background: var(--grey);
+}
+
+.products-container .product img {
+    width: 80%;
+    margin: 1rem 1rem;
+    border-radius: 5%;
+}
+
+.products-container .product img.active {
+    display: none;
+}
+
+.products-container .product .price{
+    font-weight: bolder;
+}
+
+.products-container .product .price span{
+    font-weight: lighter;
+    color: var(--beige);
+    font-size: 1.5rem;
+}
+
+.comments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.comments-container .comment {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.comments-container .comment p{
+    margin:1.5rem;
+}
+
+.comments-container .comment img {
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.comments-container .comment .icons {
+    color: var(--blue);
+}

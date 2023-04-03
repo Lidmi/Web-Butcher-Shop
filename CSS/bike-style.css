@@ -1,0 +1,61 @@
+@import url(style.css);
+@import url(restaurant-style.css);
+
+.repair {
+    display: flex;
+    justify-content: center;
+}
+
+.repair table {
+    font-size: 2rem;
+    background-color: var(--grey);
+    color: var(--bg);
+    width: 60%;
+    text-align: left;
+    /* border: var(--border); */
+  
+    border-collapse: collapse;
+}
+
+.repair th {
+    border: 2px solid var(--bg);
+    text-align: center ;
+    background-color: var(--blue);
+}
+
+.repair td {
+    font-size: 2rem;
+    border: 2px solid var(--bg);
+    padding: 1rem;
+}
+
+.repair td:last-child {
+    text-align: right;
+}
+
+.repair tr:hover {
+    background-color: var(--blue);
+
+}
+
+.models .models-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-size: 2rem;
+    color: var(--bg);
+}
+
+.models .models-container .model {
+    background-color: var(--grey);
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.models .models-container .model img{
+    width: 30%;
+}

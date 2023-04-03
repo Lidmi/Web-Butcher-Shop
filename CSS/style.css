@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg: #343434;
+    --beige: #E8AE68;
+    --red: #CD4631;
+    --grey: #718F94;
+    --blue: #96C0B7;
+    --border:  .1rem solid #CD4631;
+}
+
+* {
+    font-family:'Jost', sans-serif;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5rem;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: var(--bg);
+    color: var(--red);
+}
+
+header {
+    background-color: var(--bg);
+    border: var(--border);
+    display: flex;
+    justify-content: start;
+    color: var(--red);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    margin-left: 10%;
+}
+h2 {
+    color: var(--red);
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+header a {
+    color:var(--red);
+    border-width: 1px;
+    border-style: none;
+    border-radius: 5%;
+    padding: 1em 30px 1em 30px;
+}
+header a:hover, a.on {
+    color: var(--bg);
+    background-color:var(--grey);
+}
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.main {
+    width: 95%;
+    height: 55rem;
+    margin: 2% 2.5%;
+}
+
+.main a {
+    color:var(--red);
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: none;
+    width: 49.5%;
+    height: 100%;
+     border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#restaurant {
+    background-image: url(/images/meat.jpg);
+    background-size: cover;
+    float: left;
+}
+
+#bike {
+    background-image: url(/images/bike2.jpeg);
+    background-size: cover;
+    float: right;
+
+}
+
+.main a:hover {
+    font-size: 6rem;
+    color: var(--blue);
+}
+
+/* #bike:hover {
+    box-shadow:.7rem .7rem 1rem var(--blue);
+}
+
+#restaurant:hover {
+    box-shadow:-.7rem .7rem 1rem var(--blue);
+} */
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span{
+    color: var(--blue);
+}
+
+.share a{
+    font-size: 3rem;
+    margin: 1rem 1rem;
+    color: var(--grey);
+}
+
+.share a:hover {
+    color: var(--blue);
+}
