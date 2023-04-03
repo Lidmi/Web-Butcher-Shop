@@ -10,10 +10,19 @@
     
 }
 
-.contacts .info {
-    margin: 2rem;
+.contacts img {
+    width: 60%;
 }
 
-.contacts .map {
-    width: 45%;
+.contacts .info-container {
+    width: 40%;
+}
+
+.contacts .info-container .info {
+    margin: 0 2rem;
+}
+
+.contacts .info-container .map {
+    width: 99%;
+    height: 40%;
 }
