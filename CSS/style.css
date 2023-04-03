@@ -121,14 +121,6 @@ header li {
     color: var(--blue);
 }
 
-/* #bike:hover {
-    box-shadow:.7rem .7rem 1rem var(--blue);
-}
-
-#restaurant:hover {
-    box-shadow:-.7rem .7rem 1rem var(--blue);
-} */
-
 .topBtn {
     display: none;
     position: fixed;

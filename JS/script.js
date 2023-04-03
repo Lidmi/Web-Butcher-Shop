@@ -28,3 +28,24 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+let models_container = document.querySelector('.models-container');
+let leftBtn = document.querySelector('.leftBtn');
+let rightBtn = document.querySelector('.rightBtn');
+
+function rightArrow(){
+    models_container.scrollLeft += 300;
+}
+
+function leftArrow(){
+    models_container.scrollLeft += -300;
+}
+
+// models_container.onmouseover = function () {
+//     leftBtn.style.display = 'block';
+//     rightBtn.style.display = 'block';
+// };
+// models_container.onmouseleave = function () {
+//     leftBtn.style.display = 'none';
+//     rightBtn.style.display = 'none';
+// }
+
