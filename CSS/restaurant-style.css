@@ -27,6 +27,10 @@ h3 {
     background: var(--blue);
 }
 
+.meat #inf {
+    font-size: 2rem;
+}
+
 .products-container {
 
     display: grid;
@@ -42,73 +46,6 @@ h3 {
     justify-content: end;
     background: var(--bg);
     color: var(--red);
-}
-
-.products-container .product .description-container .description {
-    background-color: var(--grey);
-    color: var(--bg);
-    position: fixed;
-    border-radius: 5%;
-    padding: 1rem;
-    width: 50%;
-    max-height: 80%;
-
-    left: 25%;
-    top: 5%;
-    z-index: 99;
-
-}
-
-.products-container .product .description-container .description .close {
-    border: none;
-    background: none;
-    cursor: pointer;
-    position: absolute;
-    right: 2%;
-    top: 2%;
-    color: var(--bg);
-}
-
-.products-container .product .description-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 98;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-.products-container .product .description-container.active {
-    display: block;
-}
-
-.products-container .product .description-container .description .close:hover {
-    color: var(--blue);
-}
-
-
-.products-container .product .description-container .description .name{
-    font-weight: bolder;
-}
-
-.products-container .product .description-container .description .price span{
-    font-weight: lighter;
-    color: var(--bg);
-    font-size: 1.5rem;
-}
-
-.products-container .product .description-container .description .img-and-price {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.products-container .product .description-container .description .img-and-price img{
-    width: 60%;
-    max-height: 20%;
-    border-radius: 5%;
 }
 
 .products-container .product .card:hover {

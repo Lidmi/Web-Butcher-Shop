@@ -1,38 +1,72 @@
 @import url(style.css);
 @import url(restaurant-style.css);
 
-.repair {
-    display: flex;
-    justify-content: center;
+.services {
+    width: 90%;
+    margin: 2% 5%;
 }
 
-.repair table {
-    font-size: 2rem;
+.services .repair-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-gap: 1%;
+}
+
+.services .repair-container .repair .card {
+    position: relative;
+}
+
+.services .repair-container .repair .card .name-and-price{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left: 0;
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: bolder;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services .repair-container .repair .card .name-and-price p {
+    text-align: center;
+}
+
+.services .repair-container .repair .card .name-and-price .price {
+    font-weight: lighter;
+}
+
+.services .repair-container .repair .card .image {
+    min-width: 20rem;
+    min-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.services .repair-container .repair .card:hover {
+    cursor: pointer;
+}
+
+.services .repair-container .repair .card:hover .name-and-price p{
+    letter-spacing: .2rem;
+}
+
+.description-container .description {
     background-color: var(--grey);
     color: var(--bg);
-    width: 60%;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-.repair th {
-    border: 2px solid var(--bg);
-    text-align: center ;
-    background-color: var(--blue);
-}
-
-.repair td {
-    font-size: 2rem;
-    border: 2px solid var(--bg);
+    position: fixed;
+    border-radius: 5%;
     padding: 1rem;
-}
-
-.repair td:last-child {
-    text-align: right;
-}
-
-.repair tr:hover {
-    background-color: var(--blue);
+    width: 30%;
+    max-height: 80%;
+    left: 35%;
+    top: 30%;
+    z-index: 99;
 
 }
 
@@ -45,7 +79,6 @@
 
 }
 .models .models-container .model {
-    /* background-color: var(--grey); */
     min-width: 200px;
     margin: 2rem 2rem;
     padding: 1rem;
@@ -84,4 +117,42 @@
 .models .buttons button:hover {
     background-color: white;
 }
+
+@media (max-width: 1390px) {
+    .services .repair-container .repair .card .name-and-price {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1010px) {
+    .services .repair-container .repair .card .name-and-price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .services .repair-container {
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+    .services .repair-container {
+        grid-template-columns: repeat(1, minmax(20rem, 1fr));
+    }
+}
+
+@media (max-width: 320px) {
+
+    .services .repair-container {
+        grid-template-columns: repeat(1, minmax(15rem, 1fr));
+    }
+
+    .services .repair-container .repair .card .image {
+        min-width: 70px;
+        min-height: 70px;
+    }
+}
+
 

@@ -45,20 +45,33 @@ header {
     background-color: var(--bg);
     border: var(--border);
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     color: var(--red);
+    height: 9rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.1em;
-    margin-left: 10%;
+    color: var(--blue);
 }
+
 h2 {
-    color: var(--red);
     font-size: 1.5em;
     letter-spacing: 0.2em;
     text-align: center;
+}
+
+header nav ul{
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 header a {
@@ -67,56 +80,70 @@ header a {
     border-style: none;
     border-radius: 5%;
     padding: 1em 30px 1em 30px;
+
 }
 header a:hover, a.on {
     color: var(--bg);
     background-color:var(--grey);
 }
-header ul {
-    display: flex;
-    flex-flow: row wrap;
+
+header .logo img {
+    height: 95%;
+    margin: 2px;
+    min-width: 100px;
 }
 
-header li {
-    list-style: none;
+header .logo {
+    width: 65%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 
 }
+
 .main {
     width: 95%;
     height: 55rem;
     margin: 2% 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.main a {
-    color:var(--red);
+.main .main-menu {
+    position: relative;
+    width: 49%;
+    border-radius: 5%;
+    /* border: var(--border); */
+
+}
+
+.main .main-menu .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.main .main-menu .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:var(--blue);
+    text-transform: uppercase;
     font-size: 4rem;
     font-weight: bold;
+    letter-spacing: 1rem;
     text-decoration: none;
-    width: 49.5%;
-    height: 100%;
-     border-radius: 5%;
+    text-shadow: 1px 1px 5px var(--bg);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#restaurant {
-    background-image: url(/images/meat.jpg);
-    background-size: cover;
-    float: left;
-}
-
-#bike {
-    background-image: url(/images/bike2.jpeg);
-    background-size: cover;
-    float: right;
-
-}
-
-.main a:hover {
+.main .main-menu .link:hover {
     font-size: 6rem;
     color: var(--blue);
 }
@@ -142,6 +169,71 @@ header li {
     background-color: var(--blue);
 }
 
+.description-container .description {
+    background-color: var(--grey);
+    color: var(--bg);
+    position: fixed;
+    border-radius: 5%;
+    padding: 1rem;
+    width: 50%;
+    max-height: 80%;
+    left: 25%;
+    top: 5%;
+    z-index: 99;
+
+}
+
+.description-container .description .close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: var(--bg);
+}
+
+.description-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.description-container.active {
+    display: block;
+}
+
+.description-container .description .close:hover {
+    color: var(--blue);
+}
+
+.description-container .description .name{
+    font-weight: bolder;
+}
+
+.description-container .description .price span{
+    font-weight: lighter;
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+
+.description-container .description .img-and-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-container .description .img-and-price img{
+    width: 60%;
+    max-height: 20%;
+    border-radius: 5%;
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -161,4 +253,8 @@ footer span{
 
 .share a:hover {
     color: var(--blue);
+}
+
+@media (max-width: 460px) {
+
 }
