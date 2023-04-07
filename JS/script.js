@@ -1,3 +1,9 @@
+let nav = document.querySelector('nav');
+document.querySelector('#menu-btn').onclick = () => {
+    nav.classList.toggle('active');
+}
+
+
 let products = document.querySelectorAll('.product');
 AddDescriptions(products, true);
 let services = document.querySelectorAll('.repair');
@@ -39,7 +45,7 @@ function AddDescriptions(products, needImage) {
         } else {
             description.appendChild(price);
         }
-     }
+    }
 }
 
 function OpenCloseDescription(products) {
