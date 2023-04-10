@@ -1,0 +1,99 @@
+@import url(style.css);
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.menu .menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .menu-container a {
+    background-color: var(--grey);
+    color: var(--bg);
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 80%;
+    padding: 2rem 2rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.menu .menu-container a:hover {
+    background: var(--blue);
+}
+
+.meat #inf {
+    font-size: 2rem;
+}
+
+.products-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.products-container .product .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: var(--bg);
+    color: var(--red);
+}
+
+.products-container .product .card:hover {
+    cursor: pointer;
+    color: var(--bg);
+    background: var(--grey);
+}
+
+.products-container .product .card img {
+    width: 80%;
+    margin: 1rem 1rem;
+    border-radius: 5%;
+}
+
+.products-container .price{
+    font-weight: bolder;
+}
+
+.products-container .price span{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.comments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.comments-container .comment {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.comments-container .comment p{
+    margin:1.5rem;
+}
+
+.comments-container .comment img {
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.comments-container .comment .icons {
+    color: var(--blue);
+}
